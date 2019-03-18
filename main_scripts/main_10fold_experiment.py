@@ -1,4 +1,10 @@
 import os
+import sys
+
+sys.path.insert(0,
+    os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..'))
+)
+
 from data_loader.data_generator import DataGenerator
 from models.invariant_basic import invariant_basic
 from trainers.trainer import Trainer
